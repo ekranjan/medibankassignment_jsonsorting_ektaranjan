@@ -20,11 +20,11 @@
     let femaledata = new Array();
 
     petcheck=(dataobj, petsarray)=>{
-        if(petsarray.type == "Cat" && petsarray.type !== null){
-            if(dataobj.gender == "Male"){
+        if(petsarray.type === "Cat" && petsarray.type !== null){
+            if(dataobj.gender === "Male"){
             maledata.push(petsarray.name);
             }
-            else if(dataobj.gender == "Female"){
+            else if(dataobj.gender === "Female"){
                 femaledata.push(petsarray.name);
             }
         }
